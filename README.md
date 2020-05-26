@@ -5,4 +5,4 @@ Jet Reports is a Microsoft Excel Add-in that integrates Excel with Microsoft Dyn
 Source(s)
 ----------------
 Download source: 
-https://support.jetglobal.com/hc/en-us/articles/218954178-Command-Line-Installation-of-the-Jet-Excel-add-in-using-MSI
+- https://support.jetglobal.com/hc/en-us/articles/218954178-Command-Line-Installation-of-the-Jet-Excel-add-in-using-MSI
