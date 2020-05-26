@@ -44,10 +44,10 @@ pkg_state        : 'present'
 pkg_name         : 'Jet.Setup.ExcelAddIn-32bit'
 pkg_arch         : '32bit'
 pkg_repo_local   : 'c:\ProgramData\ansible\cached\{{ pkg_name }}'
-pkg_product_id   : 'addin'
+pkg_product_id   : '{545677FB-A1C7-40D7-8438-BB18845A0DBF}'
 pkg_installer    : '{{ pkg_repo_local }}\Jet.Setup.ExcelAddIn_x86.msi'
 pkg_arguments    : '/qn'
-pkg_uninstaller  : ''
+pkg_uninstaller  : 'MsiExec.exe /I{545677FB-A1C7-40D7-8438-BB18845A0DBF}'
 pkg_unarguments  : '/qn'
 
 

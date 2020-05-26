@@ -1,0 +1,21 @@
+---
+# Title: app-win-template
+#
+# Author: Bitfinity-NL / L. Rutten
+# File: defaults/additional-tasks.yml
+#
+# Description:
+#   Section for additional tasks
+#
+
+- name: "Remove Public desktop icon"
+  win_file:
+    path: "%public%/desktop/{{ pkg_icon_name }}"
+    state: absent
+  when: pkg_remove_public_desktop_icon == 'true'
+
+- name: "Remove Public start menu icon"
+  win_file:
+    path: "%ProgramData%/Microsoft/Windows/Start Menu/Programs/{{ pkg_icon_name }}"
+    state: absent
+  when: pkg_remove_public_start_menu_icon == 'true'
